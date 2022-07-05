@@ -29,7 +29,7 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 
 // DATI INIZIALI NECESSARI 
 // STRINGA VIUOTA 
-let teamInfo = '';
+let teamInfo = [];
 // // COSTRUISCO L'ARRAY DI ELEMENTI
 // #  MILESTONE 0
 const ourTeam = 
@@ -76,13 +76,14 @@ const ourTeam =
 // #MILESTONE 1 
 for(i=0 ; i< ourTeam.length;i++){
     currentTeamMember = ourTeam[i];
-    console.log('-----------------TEAM-MEMBER-----------------------');
-    // console.log('nome: '+ currentTeamMember.nome)
-    for(let key in currentTeamMember ){
-        
-        console.log(`${key} : ${currentTeamMember[key]}`)
-    }
+    // console.log('-----------------TEAM-MEMBER-----------------------');
+    teamInfo[i] = (currentTeamMember);
     
+    for(let key in currentTeamMember ){
+        // console.log(`${key} : ${currentTeamMember[key]}`) 
+        
+    }
+    console.log(teamInfo)
 }
 // ? STAMPARE LE STESSE INFORMAZIONI IN PAGINA SOTTO FORMA DI STRINGA 
 // # MILESTONE 2
