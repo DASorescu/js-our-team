@@ -28,9 +28,48 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 const ourTeam = 
 [
 {
-    nome : 'wayne',
+    nome : 'Wayne',
     cognome : 'Barnett',
     occupation : 'Founder & CEO',
     photo : 'wayne-barnett-founder-ceo.jpg'
+},
+{
+    nome : 'Angela',
+    cognome : 'Caroll',
+    occupation : 'Chief Editor',
+    photo : 'angela-caroll-chief-editor.jpg'
+},
+{
+    nome : 'Walter',
+    cognome : 'Gordon',
+    occupation : 'Office Manager',
+    photo : 'walter-gordon-office-manager.jpg'
+},
+{
+    nome : 'Angela',
+    cognome : 'Lopez',
+    occupation : 'Social Media Manager',
+    photo : 'angela-lopez-social-media-manager.jpg'
+},
+{
+    nome : 'Scott',
+    cognome : 'Estrada',
+    occupation : 'Developer',
+    photo : 'scott-estrada-developer.jpg'
+},
+{
+    nome : 'Barbara',
+    cognome : 'Ramos',
+    occupation : 'Graphic Designer',
+    photo : 'barbara-ramos-graphic-designer.jpg'
 }
 ]
+for(i=0 ; i< ourTeam.length;i++){
+    currentTeamMember = ourTeam[i];
+    console.log('-----------------TEAM-MEMBER-----------------------');
+    // console.log('nome: '+ currentTeamMember.nome)
+    for(let key in currentTeamMember ){
+        console.log(currentTeamMember[key])
+    }
+    
+}
