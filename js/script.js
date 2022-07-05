@@ -79,19 +79,26 @@ const ourTeam =
 // # MILESTONE 2
 
 
-for(i=0 ; i< ourTeam.length;i++){
+for(i=0 ; i < ourTeam.length ; i++){
     currentTeamMember = ourTeam[i];
     // console.log('-----------------TEAM-MEMBER-----------------------');
     let teamInfo = '';
     
     for(let key in currentTeamMember ){
-        teamInfo += (`${key} : ${currentTeamMember[key]} `)
+
+        if(key === 'photo'){
+            teamInfo += (`<li><img src="img/${currentTeamMember[key]}"><li>`)
+        }else{
+            teamInfo += (`<li>${key} : ${currentTeamMember[key]} <li>`)
+        }
+        teamInfo += ''
         // console.log(`${key} : ${currentTeamMember[key]}`) 
         
     }
-    document.getElementById('our-team').innerHTML += `<div>${teamInfo}</div>`;
+    document.getElementById('our-team').innerHTML += `${teamInfo}`;
     
 }
 
    
     
+

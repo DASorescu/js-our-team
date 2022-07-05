@@ -1,0 +1,33 @@
+
+
+
+
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+.body{
+    background-color: black;
+}
+img{
+    height: 100px;
+}
+.container{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 100vh;
+}
+
+#our-team{
+    color: black;
+    display: flex;
+    height: 500px;
+    width:100%
+}
+
+
