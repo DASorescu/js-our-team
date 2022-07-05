@@ -16,9 +16,21 @@ Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
 Buon lavoro! */
 // # DATI
-/*Wayne Barnett |	Founder & CEO        |	wayne-barnett-founder-ceo.jpg
+/* 
+Wayne Barnett |	Founder & CEO        |	wayne-barnett-founder-ceo.jpg
 Angela Caroll |	Chief Editor         |	angela-caroll-chief-editor.jpg
 Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
 Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
 Scott Estrada |	Developer            |	scott-estrada-developer.jpg
-Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg */
+Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
+*/
+
+const ourTeam = 
+[
+{
+    nome : 'wayne',
+    cognome : 'Barnett',
+    occupation : 'Founder & CEO',
+    photo : 'wayne-barnett-founder-ceo.jpg'
+}
+]
