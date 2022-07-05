@@ -25,6 +25,13 @@ Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
 */
 
+
+
+// DATI INIZIALI NECESSARI 
+// STRINGA VIUOTA 
+let teamInfo = '';
+// // COSTRUISCO L'ARRAY DI ELEMENTI
+// #  MILESTONE 0
 const ourTeam = 
 [
 {
@@ -64,12 +71,21 @@ const ourTeam =
     photo : 'barbara-ramos-graphic-designer.jpg'
 }
 ]
+
+// ? CICLO CHE GIRA GLI ELEMENTI E MI STAMPA IN CONSOLE LE CARATTERISTICHE DI OGNUNO DI ESSI 
+// #MILESTONE 1 
 for(i=0 ; i< ourTeam.length;i++){
     currentTeamMember = ourTeam[i];
     console.log('-----------------TEAM-MEMBER-----------------------');
     // console.log('nome: '+ currentTeamMember.nome)
     for(let key in currentTeamMember ){
-        console.log(currentTeamMember[key])
+        
+        console.log(`${key} : ${currentTeamMember[key]}`)
     }
     
 }
+// ? STAMPARE LE STESSE INFORMAZIONI IN PAGINA SOTTO FORMA DI STRINGA 
+// # MILESTONE 2
+
+    const teamElement = document.getElementById('our-team');
+    teamElement.innerText
